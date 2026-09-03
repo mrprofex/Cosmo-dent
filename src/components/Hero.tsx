@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Star, Clock, MapPin, Calendar, Phone } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
+import heroImg from '../assets/images/cosmo_clinic_hero_1788409071651.jpg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -98,7 +99,7 @@ export function Hero({ onOpenBooking }: HeroProps) {
               {/* Main Image Frame */}
               <div className="relative aspect-[4/3] md:aspect-[5/4] lg:aspect-[4/3] overflow-hidden rounded-xl bg-[#102937] shadow-2xl border border-[#1C3B4E]">
                 <img
-                  src="/src/assets/images/cosmo_clinic_hero_1788409071651.jpg"
+                  src={heroImg}
                   alt="Cosmo Dentcare modern clinical suite interior in Baharagora"
                   className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   referrerPolicy="no-referrer"
@@ -223,7 +224,7 @@ export function Hero({ onOpenBooking }: HeroProps) {
           <div className="relative w-full">
             <div className="relative aspect-[16/10] xs:aspect-[16/9] overflow-hidden rounded-2xl bg-[#102937] shadow-xl border border-[#1C3B4E]">
               <img
-                src="/src/assets/images/cosmo_clinic_hero_1788409071651.jpg"
+                src={heroImg}
                 alt="Cosmo Dentcare modern clinical suite interior in Baharagora"
                 className="w-full h-full object-cover object-center"
                 referrerPolicy="no-referrer"

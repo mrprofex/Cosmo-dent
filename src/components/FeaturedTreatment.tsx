@@ -1,5 +1,6 @@
 import { CheckCircle2, Calendar, Phone } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
+import rootCanalImg from '../assets/images/endodontic_care_1788409100131.jpg';
 
 interface FeaturedTreatmentProps {
   onDiscussTreatment?: (treatmentName: string) => void;
@@ -43,7 +44,7 @@ export function FeaturedTreatment({ onDiscussTreatment, onOpenBooking }: Feature
               {/* Image Frame */}
               <div className="aspect-[4/3] sm:aspect-[5/4] lg:aspect-[4/3] overflow-hidden rounded-2xl bg-[#102937] border border-[#1C3B4E] shadow-2xl relative">
                 <img
-                  src="/src/assets/images/dental_root_canal_1788409100806.jpg"
+                  src={rootCanalImg}
                   alt="Modern rotary endodontics and root canal therapy suite at Cosmo Dentcare"
                   className="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105"
                   referrerPolicy="no-referrer"

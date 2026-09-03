@@ -1,5 +1,6 @@
 import { CLINIC_INFO } from '../data/clinicData';
 import { HeartHandshake, ShieldCheck, MessageSquare, Sparkles, Calendar } from 'lucide-react';
+import doctorImg from '../assets/images/doctor_consultation_1788409086328.jpg';
 
 export function About() {
   return (
@@ -33,7 +34,7 @@ export function About() {
               <div className="p-3 sm:p-4 bg-white rounded-2xl shadow-lg border border-[#C1ECE6]">
                 <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden rounded-xl bg-[#F4F7F7]">
                   <img
-                    src="/src/assets/images/doctor_consultation_1788409086328.jpg"
+                    src={doctorImg}
                     alt="Dr. Suman Sahu consultation at Cosmo Dentcare Baharagora"
                     className="w-full h-full object-cover object-top filter contrast-[1.02] hover:scale-102 transition-transform duration-500"
                     referrerPolicy="no-referrer"

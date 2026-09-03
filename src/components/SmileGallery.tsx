@@ -2,6 +2,7 @@ import { useState, ChangeEvent, useEffect } from 'react';
 import { Sparkles, Maximize2, X } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data/clinicData';
 import { GalleryItem } from '../types';
+import beforeAfterImg from '../assets/images/patient_smile_care_1788409135276.jpg';
 
 export function SmileGallery() {
   const [selectedItem, setSelectedItem] = useState<GalleryItem | null>(null);
@@ -127,7 +128,7 @@ export function SmileGallery() {
                 
                 {/* "After" Image (Base layer) */}
                 <img
-                  src="/src/assets/images/patient_smile_care_1788409135276.jpg"
+                  src={beforeAfterImg}
                   alt="Restored clean healthy smile after clinical treatment"
                   className="absolute inset-0 w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -138,7 +139,7 @@ export function SmileGallery() {
 
                 {/* "Before" Image (Clipped precisely via clipPath to prevent distortion) */}
                 <img
-                  src="/src/assets/images/patient_smile_care_1788409135276.jpg"
+                  src={beforeAfterImg}
                   alt="Smile before clinical restoration"
                   className="absolute inset-0 w-full h-full object-cover filter contrast-90 sepia-[0.35] brightness-90 pointer-events-none"
                   style={{

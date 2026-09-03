@@ -1,4 +1,5 @@
 import { Sparkles, Eye, ShieldCheck, HeartHandshake } from 'lucide-react';
+import techImg from '../assets/images/dental_lounge_interior_1788409114858.jpg';
 
 export function Technology() {
   const pillars = [
@@ -95,7 +96,7 @@ export function Technology() {
         <div className="mt-12 sm:mt-16 lg:mt-24 p-6 sm:p-10 bg-[#F4F7F7] rounded-2xl border border-[#E2E8E8] grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-xs">
           <div className="lg:col-span-7 aspect-[16/9] overflow-hidden rounded-xl bg-slate-200 border border-[#E2E8E8]">
             <img
-              src="/src/assets/images/dental_lounge_interior_1788409114858.jpg"
+              src={techImg}
               alt="Cosmo Dentcare modern clinic lounge and patient reception in Baharagora"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
